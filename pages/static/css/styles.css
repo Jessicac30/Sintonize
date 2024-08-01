@@ -33,7 +33,7 @@ header {
 .menu {
     position: absolute;
     top: 20px; /* Altura do menu */
-    left: 20px; /* Esquerda do menu */
+    left: 220px; /* Aumenta a margem esquerda */
     z-index: 2; /* Aparece sobre a imagem */
     display: flex; /* Utiliza flexbox para disposição */
 }
@@ -46,17 +46,19 @@ header {
 }
 
 .menu li {
-    margin: 0 15px; /* Adiciona espaço lateral entre os itens */
+    margin: 0 10px; /* Espaço lateral entre os itens */
 }
 
 .menu a {
-    display: block; /* Faz o link preencher o espaço do li */
+    display: flex; /* Utilize flex para centralizar o conteúdo */
+    justify-content: center; /* Centraliza o texto horizontalmente */
+    align-items: center; /* Centraliza o texto verticalmente */
+    width: 141px; /* Largura fixa */
+    height: 40px; /* Altura fixa */
     text-decoration: none;
     color: #000000; /* Cor do texto do menu */
     font-weight: bold;
-    padding: 10px 15px; /* Adiciona padding ao redor do texto */
     background: #F8F6F3; /* Cor de fundo dos itens do menu */
-    border-radius: 5px; /* Cantos arredondados */
     transition: background 0.3s; /* Efeito de transição */
     text-align: center; /* Centraliza o texto dentro do botão */
 }
