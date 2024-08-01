@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reequilibre</title>
     {% load static %}
-    
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap" rel="stylesheet">
 </head>
@@ -13,18 +12,17 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Formulário</a></li>
-                <li><a href="#">Quem somos</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/formulario">Formulário</a></li>
+                <li><a href="/quem_somos">Quem somos</a></li>
             </ul>
         </nav>
         <h1>Olá! Como você está?</h1>
     </header>
-
     <main>
         <section class="descricao">
-            <p>Cuide da sua saúde mental com o nosso apoio.</p>
-            <img src="{% static 'pages/suporte.png' %}" alt="Apoio" class="ilustracao">
+            <p>O Reequilibre é um espaço que oferece funcionalidades focadas na saúde mental em relação ao trabalho. Nossa plataforma ajuda você a identificar e gerenciar o estresse, além de fornecer ferramentas práticas para melhorar sua saúde mental e manter o equilíbrio entre sua vida pessoal e profissional.</p>
+            <img src="{% static 'images/home1.png' %}" alt="Apoio" class="ilustracao">
         </section>
 
         <div class="pagina">
@@ -36,11 +34,10 @@
                 <div class="botao-container">
                     <a href="{% url 'formulario' %}" class="botao-sondagem">Clique aqui para fazer a sondagem de burnout</a>
                 </div>
-                <img src="{% static 'images/mulher.pg' %}" alt="Ilustração sobre Burnout" class="imagem" id="imagem-principal">
+                <img src="{% static 'images/mulher.png' %}" alt="Ilustração sobre Burnout" class="imagem" id="imagem-principal">
             </div>
         </div>
 
-        <!-- Seção para "Dados sobre Burnout" -->
         <section class="dados-burnout">
             <h2 class="titulo">Dados sobre Burnout</h2>
             <p class="descricao-burnout">Burnout é um estado de exaustão emocional, física e mental causado por estresse prolongado. Afeta profissionais de diversas áreas e pode ter sérias consequências para a saúde.</p>

@@ -24,23 +24,5 @@ def home(request):
 def formulario(request):
     return render(request, 'pages/formulario.html')
 
-def questionario(request):
-    return render(request, 'pages/questionario.html')
-
-def trilha_conhecimento(request):
-    return render(request, 'pages/trilha_conhecimento.html')
-
 def quem_somos(request):
     return render(request, 'pages/quem_somos.html')
-
-def contatos(request):
-    return render(request, 'pages/contatos.html')
-
-def pesquisar(request):
-    return render(request, 'pages/pesquisar.html')
-
-def pomodoro_view(request):
-    return render(request, 'pomodoro.html')  
-
-def tecnicas_tcc_view(request):
-    return render(request, 'tecnicas_tcc.html') 
