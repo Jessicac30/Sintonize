@@ -139,86 +139,78 @@ header {
     color: black;
 }
 
-.imagem {
+.imagem-container {
     max-width: 300px;
     height: auto;
     margin-left: 20px;
     transition: opacity 1s;
 }
 
-.imagem.visible {
+.imagem-container .imagem.visible {
     opacity: 1;
-}
-
-.titulo-burnout {
-    font-family: 'Roboto', sans-serif;
-    font-size: 42px;
-    font-weight: 400;
-    line-height: 49px;
-    text-align: left;
-    width: 100%;
-    max-width: 394px;
-    margin: auto;
-}
-
-.descricao-burnout {
-    font-family: 'Roboto', sans-serif;
-    font-size: 19px;
-    font-weight: 400;
-    line-height: 22.27px;
-    text-align: justify;
-    color: #000000;
-    margin: 0 auto;
-}
-
-.botao-sondagem {
-    width: 100%;
-    max-width: 378px;
-    padding: 16px 24px;
-    background: #FEFEFE;
-    border: 1px solid #000000;
-    border-radius: 20px;
-    text-align: center;
-    color: #000;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.botao-sondagem:hover {
-    background-color: #d0e0d0;
-    color: black;
 }
 
 .dados-burnout {
     text-align: center;
-    padding: 40px;
-    margin: 40px;
+    padding: 40px 20px;
 }
 
-.containe-dados {
+.titulo-burnout {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.descricao-burnout {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.container-dados {
     display: flex;
-    justify-content: space-around;
-    max-width: 100%;
-    margin: auto;
-    border-radius: 30px;
-    flex-wrap: wrap; /* Para responsividade */
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .dado {
-    background-color: #F8F8F8;
-    padding: 10px;
-    width: 223px;
-    height: 180px;
-    box-shadow: 0px 4px 4px 0px #00000040;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 200px;
+    max-width: 250px;
 }
 
-.dado p {
-    margin: 0;
+.numero {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
+
+.texto-dado {
+    font-size: 1em;
+    color: #666;
+}
+
+.botao-container {
+    margin-top: 40px;
+}
+
+.botao-burnout {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.botao-burnout:hover {
+    background-color: #0056b3;
+}
+
 
 /* Responsividade Geral */
 @media (max-width: 768px) {
