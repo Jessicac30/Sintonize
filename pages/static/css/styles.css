@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Fonte em Roboto */
     background: #F8F8F8; /* Cor de fundo da página */
     margin: 0; /* Remove margens padrão */
 }
@@ -7,6 +7,7 @@ body {
 header {
     position: relative;
     text-align: center; /* Centraliza o texto do cabeçalho */
+    background-color: #4B4B4B; /* Cor de fundo do cabeçalho */
 }
 
 .header-banner {
@@ -20,11 +21,11 @@ header {
 
 .header-content {
     position: absolute; /* Para sobrepor a imagem */
-    top: 40%; /* Ajuste a posição vertical */
+    top: 55%; /* Ajuste a posição vertical para descer */
     left: 50%; 
     transform: translate(-50%, -50%); /* Centraliza o texto */
     padding: 20px;
-    background: white; /* Cor de fundo da caixa */
+    background: #FFFFFF; /* Fundo branco */
     border-radius: 20px; /* Cantos arredondados */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra da caixa */
 }
@@ -32,25 +33,41 @@ header {
 .menu {
     position: absolute;
     top: 20px; /* Altura do menu */
-    left: 50%;
-    transform: translateX(-50%); /* Centraliza o menu */
+    left: 20px; /* Esquerda do menu */
     z-index: 2; /* Aparece sobre a imagem */
+    display: flex; /* Utiliza flexbox para disposição */
 }
 
 .menu ul {
-    list-style: none;
+    display: flex; /* Disposição horizontal */
     padding: 0;
+    margin: 0; /* Remove margens padrão */
+    list-style: none; /* Remove marcadores da lista */
 }
 
 .menu li {
-    display: inline-block;
-    margin: 0 15px;
+    margin: 0 15px; /* Adiciona espaço lateral entre os itens */
 }
 
 .menu a {
+    display: block; /* Faz o link preencher o espaço do li */
     text-decoration: none;
-    color: #333; /* Cor do texto do menu */
+    color: #000000; /* Cor do texto do menu */
     font-weight: bold;
+    padding: 10px 15px; /* Adiciona padding ao redor do texto */
+    background: #F8F6F3; /* Cor de fundo dos itens do menu */
+    border-radius: 5px; /* Cantos arredondados */
+    transition: background 0.3s; /* Efeito de transição */
+    text-align: center; /* Centraliza o texto dentro do botão */
+}
+
+.menu a:hover {
+    background: #E0E0E0; /* Cor de fundo ao passar o mouse */
+}
+
+/* Adicione ícones através da classe de ícone */
+.menu a i {
+    margin-right: 5px; /* Espaçamento entre ícone e texto */
 }
 
 .pagina {
