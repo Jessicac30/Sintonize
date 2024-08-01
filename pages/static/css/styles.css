@@ -7,27 +7,44 @@ body {
 header {
     position: relative;
     text-align: center; /* Centraliza o texto do cabeçalho */
-    background-color: #4B4B4B; /* Cor de fundo do cabeçalho */
+    background-color: #ffffff; /* Cor de fundo do cabeçalho */
+    margin: 0; /* Garantir que não haja margem */
+    padding: 0; /* Elimina padding do cabeçalho */
 }
 
 .header-banner {
     width: 100%; /* Largura total do banner */
+    margin: 0; /* Remove qualquer margem */
+    padding: 0; /* Remove qualquer padding */
 }
 
 .header-banner img {
-    width: 100%; /* Imagem ocupa toda a largura */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 102%; /* Imagem ocupa toda a largura */
+    display: block; /* Remove espaço em branco na base da imagem */
 }
 
 .header-content {
     position: absolute; /* Para sobrepor a imagem */
-    top: 55%; /* Ajuste a posição vertical para descer */
+    top: 75%; /* Ajuste a posição vertical para descer */
     left: 50%; 
     transform: translate(-50%, -50%); /* Centraliza o texto */
-    padding: 20px;
+    padding: 40px;
     background: #FFFFFF; /* Fundo branco */
     border-radius: 20px; /* Cantos arredondados */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra da caixa */
+    max-width: 90%; /* Largura máxima para responsividade */
+    text-align: left; /* Alinhamento do texto à esquerda */
+}
+
+.header-content h1 {
+    font-size: 48px; /* Tamanho da fonte maior */
+    line-height: 1.2; /* Ajuste do espaçamento */
+    margin: 0; /* Remove margens do título */
+}
+
+.header-content p {
+    font-size: 18px; /* Tamanho da fonte da descrição */
+    line-height: 1.5; /* Aumenta o espaçamento da linha */
 }
 
 .menu {
@@ -79,9 +96,16 @@ header {
     flex-direction: column;
     align-items: center; 
     justify-content: center; 
-    margin: 0 auto; /* Centraliza */
-    padding: 40px 20px; /* Ajusta o padding */
+    margin: 0; /* Remove a margem */
+    padding: 40px 20px; /* Ajusta o padding, se necessário */
 }
+
+.pagina h2,
+.pagina p {
+    margin: 0; /* Remove as margens */
+    padding: 0; /* Remove paddings */
+}
+
 
 .container {
     display: flex;
