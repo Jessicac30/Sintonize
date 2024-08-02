@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reequilibre</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header id="header">
         <div class="header-banner" id="header-banner">
-            <img src="images/home1.png" alt="Imagem de apoio" id="header-image">
+            <img src="{% static 'images/home1.png' %}" alt="Imagem de apoio" id="header-image">
             <div class="menu" id="menu">
                 <ul id="menu-list">
                     <li><a href="/" id="menu-home">Home</a></li>
@@ -29,11 +30,11 @@
             <h2 id="titulo-principal">É HORA DE CUIDAR DE VOCÊ MESMO</h2>
             <p id="descricao-principal">Avalie seu nível de estresse no trabalho em apenas 10 minutos, entenda melhor o que é o Burnout e encontre ferramentas eficazes para melhorar sua saúde mental e bem-estar.</p>
             <div class="botao-container" id="botao-container-principal">
-                <a href="templates/escolha1.html" class="botao-sondagem" id="botao-sondagem">Clique aqui para fazer a sondagem de burnout</a>
+                <a href="{% url 'escolha1' %}" class="botao-sondagem" id="botao-sondagem">Clique aqui para fazer a sondagem de burnout</a>
             </div>
         </div>
         <div class="imagem" id="imagem-container">
-            <img src="images/mulher.png" alt="Ilustração sobre Burnout" class="imagem" id="imagem-principal">
+            <img src="{% static 'images/mulher.png' %}" alt="Ilustração sobre Burnout" class="imagem" id="imagem-principal">
         </div>
     </div>
 
