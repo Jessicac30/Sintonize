@@ -134,7 +134,7 @@ def resultado_view(request):
 def home_view(request):
     try:
         # O timeout está configurado para 1 segundo
-        response = requests.get("http://equilibra-production.up.railway.app", timeout=1)
+        response = requests.get("http://equilibra-production.up.railway.app", timeout=0.1)
         # Apenas tenta acessar o JSON se a requisição for bem-sucedida
         frase_efeito = response.json().get("frase", "Frase padrão caso falhe a API.")
     except Timeout:
@@ -150,3 +150,6 @@ def home_view(request):
     }
     return render(request, 'home.html', context)
 
+def sondagem(request):
+    # Sua lógica para a view aqui
+    return render(request, 'sondagem.html') 

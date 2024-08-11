@@ -1,0 +1,148 @@
+/* Reset básico para fábrica de navegador */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos Globais */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #ffffff; /* Definindo fundo branco */
+}
+
+/* Estilos do Header */
+header {
+    position: relative;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+/* Menu de Navegação */
+.menu {
+    position: absolute;
+    top: 20px;
+    left: 220px;
+    z-index: 2;
+    display: flex;
+}
+
+.menu ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 141px; 
+    height: 40px;
+    padding: 10px;
+    text-decoration: none;
+    color: #000000;
+    background: #F8F6F3;
+    transition: background 0.3s;
+    text-align: center;
+}
+
+.menu a:hover {
+    background: #E0E0E0;
+}
+
+/* Estilos da Página */
+.pagina {
+    max-width: 1200px; /* Largura máxima que se ajuste à imagem */
+    margin: 0 auto;    /* Centraliza a página horizontalmente */
+    padding: 50px;     /* Ajuste o padding conforme necessário */
+    background: #fff;  /* Fundo branco */
+    text-align: center; /* Centraliza o texto geral */
+}
+
+/* Estilo do Título da Qualidade de Vida */
+#titulo-qualidade-vida {
+    padding: 10px;
+    font-size: 46px; /* Ajuste conforme necessário */
+    color: #000; /* Ajuste conforme necessário */
+    margin-top: 50px; 
+    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+}
+
+/* Estilo da Informação */
+#informacao-conteudo {
+    font-size: 12px;
+    background-color: #C9E957; /* Ajuste conforme necessário */
+    padding: 10px 20px; /* Padding lateral reduzido */
+    border-radius: 30px;       
+    text-align: center;      
+    color: #000;              
+    margin: 20px auto; /* Centraliza e adiciona margem vertical */
+    max-width: fit-content; /* Reduz o tamanho do container ao conteúdo */
+}
+
+/* Descrição das Perguntas */
+#descricao-perguntas {
+    text-align: left;    
+    font-size: 20px; /* Ajuste conforme necessário */
+    line-height: 1.6;
+    color: #333;
+    margin: 15px 0; /* Adicione uma margem para um melhor espaçamento */
+}
+
+/* Container de Perguntas */
+.questions-container {
+    margin: 20px 0;
+}
+
+.question-item {
+    background: #F0F0F0;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Imagem do container */
+.image-container {
+    display: flex;
+    justify-content: center; /* Centraliza a imagem */
+    margin: 20px 0; /* Espaçamento vertical */
+}
+
+.image-container img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse os limites do container */
+    height: auto; /* Mantém a proporção */
+}
+
+/* Informação Geral */
+.informacao {
+    font-size: 12px;
+    background-color: #C9E957; /* Ajuste conforme necessário */
+    padding: 10px;             
+    border-radius: 5px;       
+    text-align: center;      
+    font-weight: 400;         
+    color: #000;              
+    margin: 20px 0;           
+}
+
+/* Responsividade (opcional) */
+@media (max-width: 768px) {
+    .pagina {
+        padding: 20px; /* Padding reduzido em telas menores */
+    }
+
+    .menu {
+        flex-direction: column; /* Muda a direção do menu em telas menores */
+        align-items: flex-start; /* Alinha os itens do menu à esquerda */
+    }
+
+    .menu a {
+        min-width: 100%; /* Botões ocuparem toda a largura disponível */
+        margin-bottom: 10px; /* Espaçamento entre os botões */
+    }
+}
