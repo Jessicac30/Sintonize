@@ -89,7 +89,7 @@ header {
 
 /* Estilos Gerais da Página */
 .pagina {
-    width: 100%;
+    width: 105%;
     background: #C9E957;
     display: flex;
     align-items: center;
@@ -179,23 +179,26 @@ header {
 .dado {
     background-color: #ffffff; /* Altere esta linha para branco */
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
     flex: 1;
     min-width: 200px;
-    max-width: 250px;
+    max-width: 200px;  
 }
 
 .numero {
     font-size: 2em;
     font-weight: bold;
+    height: 50px;
     color: #666;
     justify-content: left;
+    text-align: left;
 }
 
 .texto-dado {
     font-size: 1em;
-    color: #666;
+    color: #666;  
+    text-align: left; /* Alinha o texto à esquerda */
 }
 
 /* Estilos para Formulários e Opções */
