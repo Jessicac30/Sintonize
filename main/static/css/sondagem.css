@@ -65,30 +65,34 @@ header {
     text-align: justify; /* Justifica o texto geral */
 }
 
+
 /* Estilo do Título da Qualidade de Vida */
 #titulo-qualidade-vida {
     width: 945px; /* Largura do título */
-    height: auto; /* Deixe a altura automática */
+    height: 51.3px; /* Altura do título */
     opacity: 1; /* Tornar o título visível */
     font-family: 'Roboto', sans-serif; /* Fonte Roboto */
-    font-size: 46px; /* Tamanho da fonte */
+    font-size: 40px; /* Tamanho da fonte */
     font-weight: 400; /* Peso da fonte */
-    line-height: 69px; /* Altura da linha */
+    line-height: 51px; /* Altura da linha (ajustada para centralizar verticalmente) */
     text-align: center; /* Alinhamento do texto centrado */
-    margin: 40px auto; /* Aumenta a margem para melhor espaçamento */
+    margin: 40px auto; /* Centraliza com margem acima e abaixo */
+    padding: 40px;
 }
 
 /* Estilo da Informação */
 #informacao-conteudo {
     font-size: 12px;
     background-color: #C9E957; /* Ajuste conforme necessário */
-    padding: 10px 20px; /* Padding lateral reduzido */
-    border-radius: 30px;       
+    padding: 5px 15px; /* Padding lateral reduzido */
+    border-radius: 20px;       
     text-align: center;      
     color: #000;              
     margin: 20px auto; /* Centraliza e adiciona margem vertical */
     max-width: fit-content; /* Reduz o tamanho do container ao conteúdo */
+
 }
+
 
 /* Descrição das Perguntas */
 #descricao-perguntas {
@@ -114,7 +118,7 @@ header {
     gap: 20px; /* Espaçamento entre os itens */
     margin-top: 20px; /* Margem superior opcional */
     background: #FFFFFF; /* Fundo branco do container */
-    padding: 20px; /* Padding ao redor do container */
+    padding: 40px; /* Padding ao redor do container */
 }
 
 /* Estilo do Item de Perguntas */
