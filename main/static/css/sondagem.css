@@ -9,6 +9,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background: #ffffff; /* Definindo fundo branco */
+    line-height: 1.6; /* Aumenta a altura da linha para melhor leitura */
 }
 
 /* Estilos do Header */
@@ -61,16 +62,20 @@ header {
     margin: 0 auto;    /* Centraliza a página horizontalmente */
     padding: 50px;     /* Ajuste o padding conforme necessário */
     background: #fff;  /* Fundo branco */
-    text-align: center; /* Centraliza o texto geral */
+    text-align: justify; /* Justifica o texto geral */
 }
 
 /* Estilo do Título da Qualidade de Vida */
 #titulo-qualidade-vida {
-    padding: 10px;
-    font-size: 46px; /* Ajuste conforme necessário */
-    color: #000; /* Ajuste conforme necessário */
-    margin-top: 50px; 
-    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+    width: 945px; /* Largura do título */
+    height: auto; /* Deixe a altura automática */
+    opacity: 1; /* Tornar o título visível */
+    font-family: 'Roboto', sans-serif; /* Fonte Roboto */
+    font-size: 46px; /* Tamanho da fonte */
+    font-weight: 400; /* Peso da fonte */
+    line-height: 69px; /* Altura da linha */
+    text-align: center; /* Alinhamento do texto centrado */
+    margin: 40px auto; /* Aumenta a margem para melhor espaçamento */
 }
 
 /* Estilo da Informação */
@@ -87,24 +92,57 @@ header {
 
 /* Descrição das Perguntas */
 #descricao-perguntas {
-    text-align: left;    
-    font-size: 20px; /* Ajuste conforme necessário */
-    line-height: 1.6;
-    color: #333;
-    margin: 15px 0; /* Adicione uma margem para um melhor espaçamento */
+    max-width: 100%; /* Altera para uma largura máxima de 100% */
+    height: auto; /* Mantém a altura automática */
+    position: relative; 
+    opacity: 1; 
+    font-family: 'Roboto', sans-serif; 
+    font-size: 20px; 
+    font-weight: 400; 
+    line-height: 30px; 
+    text-align: justify; /* Justifica o texto */
+    margin: 40px auto; /* Centraliza horizontalmente */
+    padding: 20px; /* Adiciona um padding para evitar que o texto grude nas bordas */
+   
 }
+
 
 /* Container de Perguntas */
 .questions-container {
-    margin: 20px 0;
+    display: grid; /* Usar Grid Layout para dispor os itens */
+    grid-template-columns: repeat(3, 1fr); /* Criar 3 colunas iguais */
+    gap: 20px; /* Espaçamento entre os itens */
+    margin-top: 20px; /* Margem superior opcional */
+    background: #FFFFFF; /* Fundo branco do container */
+    padding: 20px; /* Padding ao redor do container */
 }
 
+/* Estilo do Item de Perguntas */
 .question-item {
-    background: #F0F0F0;
-    border-radius: 8px;
-    padding: 10px;
-    margin: 10px 0;
+    width: 100%; /* Largura do item 100% do grid */
+    height: auto; /* Altura automática para se ajustar ao conteúdo */
+    background: #FFFFFF; /* Fundo do item */
+    border: 2px solid #C9E95780; /* Borda com cor e opacidade */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 15px; /* Aumenta o padding interno para espaçamento */
+    margin: 20px 0; /* Adiciona margens verticais entre os itens de perguntas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve opcional */
+    opacity: 1; /* Tornar o item visível */
+    text-align: left; /* Justifica o texto dentro do item */
 }
+
+/* Para garantir textos organizados */
+.question-item p {
+    margin: 0; /* Remove margens dos parágrafos (se houver) */
+    height: auto; /* Garante que o texto ocupe o espaço total */
+    
+    /* Estilo de Texto */
+    font-family: 'Roboto', sans-serif; /* Fonte Roboto */
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: 400; /* Peso da fonte */
+    line-height: 1.5; /* Aumenta a altura da linha para mais espaçamento */
+}
+
 
 /* Imagem do container */
 .image-container {
@@ -127,7 +165,7 @@ header {
     text-align: center;      
     font-weight: 400;         
     color: #000;              
-    margin: 20px 0;           
+    margin: 20px 0; /* Aumenta a margem para espaçamento */
 }
 
 /* Responsividade (opcional) */
@@ -146,3 +184,24 @@ header {
         margin-bottom: 10px; /* Espaçamento entre os botões */
     }
 }
+.importante {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: justify;
+    margin-top: 10px; /* Ajuste o valor conforme necessário */
+    padding: 15px; /* Opcional: espaçamento interno */
+    
+}
+.text-color {
+    color: #525866; /* Define a cor do texto */
+    font-family: 'Roboto', sans-serif; /* Define a família da fonte */
+    font-size: 20px; /* Define o tamanho da fonte */
+    font-weight: 400; /* Peso normal da fonte */
+    line-height: 30px; /* Altura da linha */
+    text-align: justify; /* Justifica o texto */
+    padding: 15px; /* Opcional: espaçamento interno */
+    margin-bottom: 10px; /* Espaço entre os parágrafos */
+}
+

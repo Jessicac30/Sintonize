@@ -177,7 +177,7 @@ header {
 }
 
 .dado {
-    background-color: #f9f9f9;
+    background-color: #ffffff; /* Altere esta linha para branco */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -190,6 +190,7 @@ header {
     font-size: 2em;
     font-weight: bold;
     color: #666;
+    justify-content: left;
 }
 
 .texto-dado {
