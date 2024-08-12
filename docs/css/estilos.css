@@ -1,44 +1,29 @@
-.form-group {
-    margin-bottom: 15px;
+/* Reset básico para fábrica de navegador */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.options {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.option-item {
-    margin-right: 15px;
-    display: flex;
-    align-items: center;
-}
-
-input[type="radio"] {
-    margin-right: 5px;
-}
-
+/* Estilos Globais */
 body {
     font-family: 'Roboto', sans-serif;
-    background: #F8F8F8;
-    margin: 0;
+    background: #ffffff;
 }
 
+/* Estilos do Header */
 header {
     position: relative;
     text-align: center;
     background-color: #ffffff;
-    margin: 0;
-    padding: 0;
 }
 
 .header-banner {
     width: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 .header-banner img {
-    width: 102%;
+    width: 100%;
     display: block;
 }
 
@@ -58,7 +43,6 @@ header {
 .header-content h1 {
     font-size: 48px;
     line-height: 1.2;
-    margin: 0;
 }
 
 .header-content p {
@@ -66,6 +50,7 @@ header {
     line-height: 1.5;
 }
 
+/* Menu de Navegação */
 .menu {
     position: absolute;
     top: 20px;
@@ -77,7 +62,6 @@ header {
 .menu ul {
     display: flex;
     padding: 0;
-    margin: 0;
     list-style: none;
 }
 
@@ -89,11 +73,11 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 141px;
+    min-width: 141px; 
     height: 40px;
+    padding: 10px;
     text-decoration: none;
     color: #000000;
-    font-weight: bold;
     background: #F8F6F3;
     transition: background 0.3s;
     text-align: center;
@@ -103,10 +87,7 @@ header {
     background: #E0E0E0;
 }
 
-.menu a i {
-    margin-right: 5px;
-}
-
+/* Estilos Gerais da Página */
 .pagina {
     width: 100%;
     background: #C9E957;
@@ -119,28 +100,29 @@ header {
 .container {
     max-width: 600px;
     text-align: left;
-    padding-right: 20px;
 }
 
 .pagina h2 {
     font-size: 36px;
     font-weight: bold;
-    margin: 0 0 10px;
+    margin-bottom: 10px;
     color: #000;
 }
 
 .pagina p {
     font-size: 18px;
     line-height: 1.6;
-    margin: 0 0 20px;
+    margin-bottom: 20px;
     color: #000;
 }
 
+/* Botões */
 .botao-container {
     margin-top: 20px;
 }
 
-.botao-sondagem {
+.botao-sondagem,
+.botao-burnout {
     padding: 12px 24px;
     background: #FEFEFE;
     border: 1px solid #000;
@@ -153,11 +135,13 @@ header {
     text-decoration: none;
 }
 
-.botao-sondagem:hover {
+.botao-sondagem:hover,
+.botao-burnout:hover {
     background-color: #d0e0d0;
     color: black;
 }
 
+/* Estilos da Imagem */
 .imagem-container {
     max-width: 300px;
     height: auto;
@@ -169,6 +153,7 @@ header {
     opacity: 1;
 }
 
+/* Seção de Dados sobre Burnout */
 .dados-burnout {
     text-align: center;
     padding: 40px 20px;
@@ -192,52 +177,55 @@ header {
 }
 
 .dado {
-    background-color: #f9f9f9;
+    background-color: #ffffff; /* Altere esta linha para branco */
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
     flex: 1;
     min-width: 200px;
-    max-width: 250px;
+    max-width: 200px;  
 }
 
 .numero {
     font-size: 2em;
     font-weight: bold;
-    margin-bottom: 10px;
+    height: 50px;
+    color: #666;
+    justify-content: left;
+    text-align: left;
 }
 
 .texto-dado {
     font-size: 1em;
-    color: #666;
+    color: #666;  
+    text-align: left; /* Alinha o texto à esquerda */
 }
 
-.botao-container {
-    margin-top: 40px;
+/* Estilos para Formulários e Opções */
+.form-group {
+    margin-bottom: 15px;
 }
 
-.botao-burnout {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+.options {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.botao-burnout:hover {
-    background-color: #0056b3;
+.option-item {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
 }
 
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Responsividade */
 @media (max-width: 768px) {
     .pagina {
         flex-direction: column;
         align-items: center;
-    }
-
-    .linha {
-        margin: 20px 0;
     }
 
     .container {
@@ -250,5 +238,3 @@ header {
         margin-top: 20px;
     }
 }
-
-
