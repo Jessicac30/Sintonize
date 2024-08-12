@@ -23,7 +23,7 @@ header {
 }
 
 .header-banner img {
-    width: 102%;
+    width: 100%;
     display: block;
 }
 
@@ -89,7 +89,7 @@ header {
 
 /* Estilos Gerais da Página */
 .pagina {
-    width: 105%;
+    width: 100%;
     background: #C9E957;
     display: flex;
     align-items: center;
