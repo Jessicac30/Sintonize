@@ -1,0 +1,4 @@
+make: Entering directory 'c:/Users/gusta/Desktop/reequilibre'
+pip install -r requirements.txt
+make: Leaving directory 'c:/Users/gusta/Desktop/reequilibre'
+ 

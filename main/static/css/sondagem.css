@@ -1,70 +1,3 @@
-/* Reset básico para fábrica de navegador */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-/* Estilos Globais */
-body {
-    font-family: 'Roboto', sans-serif;
-    background: #ffffff; /* Definindo fundo branco */
-    line-height: 1.6; /* Aumenta a altura da linha para melhor leitura */
-}
-
-/* Estilos do Header */
-header {
-    position: relative;
-    text-align: center;
-    background-color: #ffffff;
-}
-
-/* Menu de Navegação */
-.menu {
-    position: absolute;
-    top: 20px;
-    left: 220px;
-    z-index: 2;
-    display: flex;
-}
-
-.menu ul {
-    display: flex;
-    padding: 0;
-    list-style: none;
-}
-
-.menu li {
-    margin: 0 10px;
-}
-
-.menu a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 141px; 
-    height: 40px;
-    padding: 10px;
-    text-decoration: none;
-    color: #000000;
-    background: #F8F6F3;
-    transition: background 0.3s;
-    text-align: center;
-}
-
-.menu a:hover {
-    background: #E0E0E0;
-}
-
-/* Estilos da Página */
-.pagina {
-    max-width: 1200px; /* Largura máxima que se ajuste à imagem */
-    margin: 0 auto;    /* Centraliza a página horizontalmente */
-    padding: 50px;     /* Ajuste o padding conforme necessário */
-    background: #fff;  /* Fundo branco */
-    text-align: justify; /* Justifica o texto geral */
-}
-
 
 /* Estilo do Título da Qualidade de Vida */
 #titulo-qualidade-vida {
@@ -172,22 +105,6 @@ header {
     margin: 20px 0; /* Aumenta a margem para espaçamento */
 }
 
-/* Responsividade (opcional) */
-@media (max-width: 768px) {
-    .pagina {
-        padding: 20px; /* Padding reduzido em telas menores */
-    }
-
-    .menu {
-        flex-direction: column; /* Muda a direção do menu em telas menores */
-        align-items: flex-start; /* Alinha os itens do menu à esquerda */
-    }
-
-    .menu a {
-        min-width: 100%; /* Botões ocuparem toda a largura disponível */
-        margin-bottom: 10px; /* Espaçamento entre os botões */
-    }
-}
 .importante {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
